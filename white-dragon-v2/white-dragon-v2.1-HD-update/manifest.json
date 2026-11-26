@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "白龙娘 · ChatGPT 网页伴侣",
+  "version": "2.1.0",
+  "description": "内置白龙娘动画，鼠标朝向、拖拽、互动、聊天状态与对话面板。",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_title": "白龙娘设置",
+    "default_popup": "popup.html",
+    "default_icon": "assets/icon.png"
+  },
+  "icons": {
+    "128": "assets/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://chat.openai.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/dragon.png",
+        "assets/dragon-hd-1.png",
+        "assets/dragon-hd-2.png",
+        "assets/dragon-hd-3.png"
+      ],
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://chat.openai.com/*"
+      ]
+    }
+  ]
+}

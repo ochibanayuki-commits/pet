@@ -1,0 +1,8 @@
+﻿白龙娘 V2.1 高清素材补丁
+
+1. 解压本 ZIP，把其中 manifest.json、content.js 和 assets 文件夹复制到已解压的 white-dragon-v2 根目录，选择覆盖同名文件并合并 assets。
+2. 保留原来的 popup.html、popup.js、popup.css、assets/icon.png 等，不需要删除旧 dragon.png。
+3. 打开 chrome://extensions/，找到原白龙娘扩展，点击重新加载按钮，不要重新添加扩展。
+4. 刷新 ChatGPT 网页。原有设置一般会保留。
+
+素材：三张 576×1024 PNG，每张 2×2，每帧画布 288×512。原图实际每个角色约 230×460 像素，并未通过插值假造高清细节。采用 12 个姿势加 CSS 动画，取代原来的 88 个低清晰度小帧。没有真正的眼球或骨骼追踪；保留方向切换、拖动及本地/AI 聊天逻辑。
